@@ -8,7 +8,7 @@ if(feedbackyData){
     console.log("Please, add your feedbacky datas.");
 }
 
-var API_URL = "https://feedbacky-backend-2022.herokuapp.com";
+var API_URL = "https://feedbacky-backend-2022.herokuapp.com/form/createAnswer";
 
 function feedbackyModalOpen(){
     modalInsideContent.innerHTML = defaultModalInsideContent;
