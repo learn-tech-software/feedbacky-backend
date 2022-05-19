@@ -9,7 +9,7 @@ function generate(formId, fields){
     let txtFeedbackyContent = `<div id="feedbackyModal" class="feedbacky-modal"> <div class="feedbacky-modal-content"> <span class="feedbacky-close">&times;</span> <div class="feedbacky-modal-inside-content"> <h2 style="text-align: center;">SEND YOUR FEEDBACK</h2> ${feedbackyAreas} <br><br> <button onclick="feedbackySendForm()" style="width: 100%;background-color: #e67e22;color: #ffffff;border:none;padding-top: 20px;padding-bottom: 20px;">SEND</button> </div> </div> </div>`
     
     let txtFeedbackyResult= `<h2 style="text-align:center;color:green;"><br/><br/>WE HAVE GOT YOUR FEEDBACK<br/><br/></h2>`
-    var scriptText = `<script> var feedbackyData = { feedbackyID: '${txtFeedbackyId}', formAreas: ${fields}, feedbackyContent: '${txtFeedbackyContent}', feedbackyResultContent: '${txtFeedbackyResult}', } </script> <script src="feedbacky.js"></script>`
+    var scriptText = `<script> var feedbackyData = { feedbackyID: '${txtFeedbackyId}', formAreas: ${fields}, feedbackyContent: '${txtFeedbackyContent}', feedbackyResultContent: '${txtFeedbackyResult}', } </script> <script src="https://feedbacky-backend-2022.herokuapp.com/js/feedbacky.js"></script>`
     return scriptText
 }
 
