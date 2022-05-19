@@ -40,6 +40,6 @@ app.use(errorController.get404Page);
 
 
 // App start with port 80
-app.listen(80, () => {
+app.listen(process.env.PORT || 80, () => {
     console.log("App Started On Port : 80");
 });
