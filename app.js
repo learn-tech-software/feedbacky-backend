@@ -43,3 +43,5 @@ app.use(errorController.get404Page);
 app.listen(process.env.PORT || 80, () => {
     console.log("App Started On Port : 80");
 });
+
+module.exports = app;
